@@ -19,17 +19,17 @@
 }
 
 .font-chewy {
-    font-family: 'chewy';
+    font-family: 'chewy', cursive;
 }
 
 .font-finger_print {
-    font-family: 'finger-print';
+    font-family: 'finger-print', cursive;
 }
 
 .font-piedra {
-    font-family: 'piedra';
+    font-family: 'piedra', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .font-righteous {
-    font-family: 'righteous';
+    font-family: 'righteous', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }

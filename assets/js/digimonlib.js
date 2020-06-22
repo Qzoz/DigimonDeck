@@ -91,7 +91,8 @@ class SwipersInstanceGen {
 
 const swiperInstances = new SwipersInstanceGen(["fresh", "training", "rookie", "champion", "ultimate", "mega"]);
 
-$().ready(() => {
+
+function registerDataDigiDeck() {
     const babySwiper = swiperInstances.targetMapData["fresh"];
     const trainingSwiper = swiperInstances.targetMapData["training"];
     const rookieSwiper = swiperInstances.targetMapData["rookie"];
@@ -108,7 +109,6 @@ $().ready(() => {
         }, 1500);
     }, 2000);
 
-
     let babySlides = new CardSlides('fresh');
     let trainigSlides = new CardSlides('training');
     let rookieSlides = new CardSlides('rookie');
@@ -122,4 +122,28 @@ $().ready(() => {
     championSlides.create(championSwiper);
     ultimateSlides.create(ultimateSwiper);
     megaSlides.create(megaSwiper);
+}
+
+/**
+ * 
+ * Function is for registering Service Worker
+ * 
+ */
+async function registerServiceWorkerDigiDeck(){
+    if ('serviceWorker' in navigator) {
+        try {
+            await navigator.serviceWorker.register('./sw.js');
+        } catch (e) {
+            console.log('Service Worker Register Failed.');
+        }
+    } else {
+        console.log('Service Worker not Supported');
+    }
+}
+
+
+
+$().ready(() => {
+    registerDataDigiDeck();
+    registerServiceWorkerDigiDeck();
 });
