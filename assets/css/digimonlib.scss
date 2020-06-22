@@ -130,6 +130,21 @@ html, body {
     }
 }
 
+.page-count-container {
+    z-index: 99;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    background-color: getColor(dlWhite);
+    padding: 10px 15px;
+    border: 2px solid getColor(dlBlackL);
+    border-radius: 25px 100px 100px 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
 .head-header { 
     min-height: 80px;
     background-color: getColor(dlAccent);
@@ -169,7 +184,8 @@ html, body {
                 height: 100%;
                 width: 100%;
                 color: getColor(dlWhite);
-                background-color: getColor(dlBlackL);
+                // background-color: getColor(dlBlackL);
+                background: linear-gradient(to top left, getColor(dlBlackL), getColor(dlGrey));
                 display: inline-flex;
                 justify-content: center;
                 align-items: center;

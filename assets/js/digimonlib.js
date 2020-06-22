@@ -4,6 +4,8 @@ class CardSlides {
         this.level = level;
     }
     generate(swiperInstance, jsonData) {
+        $(this.targetId).find("#slide-count").html((jsonData)? `${jsonData.length}`:"&mdash;");
+        $(this.targetId).find("#slide-no").html((jsonData)? "1":"&mdash;");
         $(this.targetId).find(".swiper-lazy-preloader").remove();
         jsonData.forEach((data) => {
             let slideDiv = $("<div></div>", {
@@ -27,6 +29,10 @@ class CardSlides {
             cardDiv.append(img, nameDiv);
             slideDiv.append(cardDiv);
             swiperInstance.appendSlide(slideDiv);
+        });
+        const xThis = this;
+        swiperInstance.on("slideChange", function() {
+            $(xThis.targetId).find("#slide-no").html(`${swiperInstance.activeIndex + 1}`);
         });
     }
     create(swiperInstance) {
