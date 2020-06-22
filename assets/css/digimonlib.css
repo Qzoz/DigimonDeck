@@ -16,6 +16,17 @@ html, body {
   background-size: contain;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #2e2e2e;
+  -webkit-box-shadow: inset 0px 0px 2px #e4007d;
+          box-shadow: inset 0px 0px 2px #e4007d;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e4007d;
+}
+
 .bg-primary {
   background-color: #000000;
 }
@@ -87,6 +98,7 @@ html, body {
 }
 
 .container-header h2 {
+  font-size: 12px;
   margin-left: 10px;
 }
 
@@ -114,8 +126,8 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 36px;
-  width: 36px;
+  height: 32px;
+  width: 32px;
   padding: 5px;
   border-radius: 50px;
   background-color: #2e2e2e;
@@ -155,15 +167,15 @@ html, body {
 }
 
 .digi-card .digi-card-tag {
-  font-size: 16px;
-  padding: 20px;
+  font-size: 10px;
+  padding: 5px;
   border-top: 2px solid #000000;
   background-color: #2e2e2e;
   color: #ffffff;
 }
 
 .head-header {
-  min-height: 100px;
+  min-height: 80px;
   background-color: #e4007d;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -179,7 +191,7 @@ html, body {
 }
 
 .head-header .header-img {
-  max-height: 80px;
+  max-height: 70px;
 }
 
 .head-header h1 {
@@ -271,6 +283,11 @@ html, body {
 a, a:link, a:visited, a:hover, a:focus, a:active {
   color: #2e2e2e;
   text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 #baby-link .link-button {
@@ -427,6 +444,16 @@ a, a:link, a:visited, a:hover, a:focus, a:active {
 }
 
 @media (min-width: 768px) {
+  .digi-card .digi-card-tag {
+    font-size: 18px;
+    padding: 20px;
+  }
+  .head-header {
+    height: 100px;
+  }
+  .head-header .header-img {
+    max-height: 80px;
+  }
   .head-header h1 {
     font-size: 40px;
   }
@@ -438,10 +465,11 @@ a, a:link, a:visited, a:hover, a:focus, a:active {
   .container-header {
     font-size: 18px;
   }
-  .container-header .container-header h2 {
+  .container-header h2 {
+    font-size: 20px;
     margin-left: 20px;
   }
-  .container-header .container-header h2 span:last-child {
+  .container-header h2 span:last-child {
     margin-left: 20px;
     padding: 10px 20px;
   }

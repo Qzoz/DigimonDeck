@@ -33,6 +33,16 @@ html, body {
     background-size: contain;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: getColor(dlBlackL);
+    box-shadow: inset 0px 0px 2px getColor(dlAccent);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: getColor(dlAccent);
+}
+
 .bg-primary { background-color: getColor(dlPrimary); }
 .bg-accent { background-color: getColor(dlAccent); }
 .bg-red { background-color: getColor(dlRed); }
@@ -61,6 +71,7 @@ html, body {
     font-size: 12px;
 
     h2 {
+        font-size: 12px;
         margin-left: 10px;
         span:last-child {
             margin-left: 5px;
@@ -76,8 +87,8 @@ html, body {
                 display: inline-flex;
                 justify-content: center;
                 align-items: center;
-                height: 36px;
-                width: 36px;
+                height: 32px;
+                width: 32px;
                 padding: 5px;
                 border-radius: 50px;
                 background-color: getColor(dlBlackL);
@@ -111,8 +122,8 @@ html, body {
         width: 100%;
     }
     .digi-card-tag {
-        font-size: 16px;
-        padding: 20px;
+        font-size: 10px;
+        padding: 5px;
         border-top: 2px solid getColor(dlPrimary);
         background-color: getColor(dlBlackL);
         color: getColor(dlWhite);
@@ -120,7 +131,7 @@ html, body {
 }
 
 .head-header { 
-    min-height: 100px;
+    min-height: 80px;
     background-color: getColor(dlAccent);
     display: flex;
     justify-content: center;
@@ -128,7 +139,7 @@ html, body {
     box-shadow: 0px 2px 5px getColor(dlGrey);
 
     .header-img {
-        max-height: 80px;
+        max-height: 70px;
     }
 
     h1 {
@@ -151,11 +162,9 @@ html, body {
         display: flex;
         justify-content: center;
         align-items: center;
-
         a {
             height: 95%;
             width: 95%;
-
             .link-button {
                 height: 100%;
                 width: 100%;
@@ -198,6 +207,8 @@ html, body {
 a,a:link,a:visited,a:hover,a:focus,a:active{
     color: getColor(dlBlackL);
     text-decoration: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 #baby-link .link-button {
@@ -316,8 +327,18 @@ a,a:link,a:visited,a:hover,a:focus,a:active{
 }
 
 @media (min-width: 768px) {
-    .head-header h1 {
-        font-size: 40px;
+    .digi-card .digi-card-tag {
+        font-size: 18px;
+        padding: 20px;
+    }
+    .head-header {
+        height: 100px;
+        .header-img {
+            max-height: 80px;
+        }
+        h1 {
+            font-size: 40px;
+        }
     }
     .head-content div a .link-button {
         font-size: 24px;
@@ -326,7 +347,8 @@ a,a:link,a:visited,a:hover,a:focus,a:active{
     }
     .container-header {
         font-size: 18px;
-        .container-header h2 {
+        h2 {
+            font-size: 20px;
             margin-left: 20px;
             span:last-child {
                 margin-left: 20px;
