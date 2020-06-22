@@ -184,14 +184,14 @@ html, body {
                 height: 100%;
                 width: 100%;
                 color: getColor(dlWhite);
-                // background-color: getColor(dlBlackL);
-                background: linear-gradient(to top left, getColor(dlBlackL), getColor(dlGrey));
+                background-color: transparent;
+                // background: linear-gradient(to bottom left, getColor(dlBlackL), getColor(dlBlackL), getColor(dlBlackL), getColor(dlGrey));
+                // clip-path: polygon(0% 0%, 70% 0%, 100% 30%, 100% 100%, 30% 100%, 0% 70%);
                 display: inline-flex;
                 justify-content: center;
                 align-items: center;
                 border-radius: 20%;
                 font-size: 16px;
-                clip-path: polygon(0% 0%, 70% 0%, 100% 30%, 100% 100%, 30% 100%, 0% 70%);
                 text-shadow: 0px 0px 5px getColor(dlBlackL), 0px 0px 10px getColor(dlWhite);
                 transition: 0.8s ease;
                 position: relative;
@@ -200,10 +200,14 @@ html, body {
                 border-right-style: solid;
                 border-bottom-width: 5px;
                 border-bottom-style: solid;
+                z-index: 1;
+                h3 {
+                    z-index: 80;
+                }
             }
             .link-button::after {
                 content: '';
-                z-index: -1;
+                z-index: 0;
                 position: absolute;
                 bottom: 0;
                 right: 0;
