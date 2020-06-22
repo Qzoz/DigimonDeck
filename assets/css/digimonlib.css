@@ -98,7 +98,6 @@ html, body {
 }
 
 .container-header h2 {
-  font-size: 12px;
   margin-left: 10px;
 }
 
@@ -430,8 +429,6 @@ a, a:link, a:visited, a:hover, a:focus, a:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: 1s ease;
-  transition: 1s ease;
 }
 
 .loader-screen .loader-img {
@@ -484,11 +481,8 @@ a, a:link, a:visited, a:hover, a:focus, a:active {
     border-right-width: 15px;
     border-bottom-width: 15px;
   }
-  .container-header {
-    font-size: 18px;
-  }
   .container-header h2 {
-    font-size: 20px;
+    font-size: 24px;
     margin-left: 20px;
   }
   .container-header h2 span:last-child {
