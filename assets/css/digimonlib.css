@@ -114,9 +114,9 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 48px;
-  width: 48px;
-  padding: 10px;
+  height: 36px;
+  width: 36px;
+  padding: 5px;
   border-radius: 50px;
   background-color: #2e2e2e;
 }
@@ -445,10 +445,10 @@ a, a:link, a:visited, a:hover, a:focus, a:active {
     margin-left: 20px;
     padding: 10px 20px;
   }
-  .container-header h1 a span {
+  .container-header h1 a div {
     height: 48px;
     width: 48px;
-    font-size: 24px;
+    padding: 10px;
   }
   .container-header h1 {
     margin-left: 20px;

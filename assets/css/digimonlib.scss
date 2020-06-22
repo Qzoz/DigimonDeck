@@ -76,9 +76,9 @@ html, body {
                 display: inline-flex;
                 justify-content: center;
                 align-items: center;
-                height: 48px;
-                width: 48px;
-                padding: 10px;
+                height: 36px;
+                width: 36px;
+                padding: 5px;
                 border-radius: 50px;
                 background-color: getColor(dlBlackL);
             }
@@ -333,10 +333,10 @@ a,a:link,a:visited,a:hover,a:focus,a:active{
                 padding: 10px 20px;
             }
         }
-        h1 a span {    
+        h1 a div {    
             height: 48px;
             width: 48px;
-            font-size: 24px;
+            padding: 10px;
         }
     }
     .container-header h1 {
