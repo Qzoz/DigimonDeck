@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'chewy';
+    src: url(Chewy/Chewy-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'finger-print';
+    src: url(Finger_Paint/FingerPaint-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'piedra';
+    src: url(Piedra/Piedra-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'righteous';
+    src: url(Righteous/Righteous-Regular.ttf);
+}
+
+.font-chewy {
+    font-family: 'chewy';
+}
+
+.font-finger_print {
+    font-family: 'finger-print';
+}
+
+.font-piedra {
+    font-family: 'piedra';
+}
+
+.font-righteous {
+    font-family: 'righteous';
+}
