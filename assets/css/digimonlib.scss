@@ -72,13 +72,13 @@ html, body {
         margin-right: 10px;
         a {
             color: getColor(dlWhite);
-            span {
+            div {
                 display: inline-flex;
                 justify-content: center;
                 align-items: center;
-                height: 32px;
-                width: 32px;
-                font-size: 20px;
+                height: 48px;
+                width: 48px;
+                padding: 10px;
                 border-radius: 50px;
                 background-color: getColor(dlBlackL);
             }
@@ -111,6 +111,7 @@ html, body {
         width: 100%;
     }
     .digi-card-tag {
+        font-size: 16px;
         padding: 20px;
         border-top: 2px solid getColor(dlPrimary);
         background-color: getColor(dlBlackL);
